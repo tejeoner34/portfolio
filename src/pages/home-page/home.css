@@ -1,0 +1,141 @@
+
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+section{
+    width: 80%;
+}
+
+.home-page__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.home-page__info-container{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-page__profile-img__container{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border: solid 1px green;
+    border-radius: 2px;
+}
+
+.home-page__info-container h2{
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.home-page__info-container p{
+    font-size: 1.5rem;
+}
+
+.info-container__hello{
+    color: rgb(23, 202, 142);
+}
+
+.home-page__img-container{
+    order: 0;
+}
+
+.home-page__projects-button{
+    color: palegreen;
+    padding: .5rem 3rem .5rem 3rem;
+    background-color: transparent;
+    border: 1px solid palegreen;
+    border-radius: 3px;
+}
+
+.home-page__projects-button:hover{
+    background-color: rgb(143, 142, 142);
+    cursor: pointer;
+}
+
+/* .home-page__about-me{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.about-me__container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-me__info{
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem
+}
+
+.home__heading{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.home__heading::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    top: 3px;
+    margin-left: 20px;
+    background-color: gray;
+    opacity: .3;
+}
+
+.about-me__img-container{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__img-container img{
+    width: 100%;
+    
+}
+
+.projects__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width: 700px){
+
+    .home-page__container{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+
+}
