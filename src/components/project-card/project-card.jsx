@@ -1,11 +1,7 @@
 import './project-card.css';
 import * as React from 'react';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import { Button } from '@mui/material';
+
 
 export default function ProjectCard(props) {
 
@@ -27,16 +23,6 @@ export default function ProjectCard(props) {
         width: '250px',
         top: '-10px',
         left: '-10px',
-        borderRadius: '2px'
-    }
-
-    const gifContainer = {
-        backgroundImage: `url("${props.data.gif}")`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'top',
-        height: '196px',
-        width: '70%',
-        minWidth: '400px',
         borderRadius: '2px'
     }
 

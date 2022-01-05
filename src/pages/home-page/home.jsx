@@ -12,6 +12,7 @@ import tetrisGif from '../../assets/gif/tetris.gif';
 import kanbanGif from '../../assets/gif/kanban.gif';
 import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
+import { useState } from 'react';
 
 
 export default function Home() {
@@ -59,6 +60,18 @@ export default function Home() {
         },
     ]
 
+    const [nameClass, setNameClass] = useState('name')
+
+    const name = document.getElementsByClassName('name');
+    
+    const intervalForName = () =>{
+        setTimeout(() => {
+            setNameClass('name-with-opacity') 
+        }, 1500);
+    }
+
+    intervalForName()
+    
     const handleProjectsButton = ()=>{
         scroller.scrollTo("home-page__projects", {
             duration: 800,
@@ -96,7 +109,10 @@ export default function Home() {
                 <div className="home-page__info-container">
                     <div>
                         <p className='info-container__hello'>Hi, my name is</p>
-                        <h2>Álvaro Tejedor</h2>
+                        <div className='nameWrapper'>
+                        <h2 className={nameClass}>Álvaro Tejedor<div className='name__writing-line'>|</div></h2>
+                        <div className='name__bottom-border'></div>
+                        </div>
                         <p>Junior Full Stack Developer</p>
                     </div>
                     <button onClick={handleProjectsButton} className='home-page__projects-button' >Go to Projects!</button>

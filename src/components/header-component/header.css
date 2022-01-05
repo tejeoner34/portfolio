@@ -91,12 +91,26 @@
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
     padding-left: 0;
 }
 
 .aside__item{
     cursor: pointer;
+}
+
+.aside__item:hover{
+    color: rgb(48 255 64);
+}
+
+.aside__item::before{
+    content: "<";
+    color: rgb(48 255 64);
+}
+
+.aside__item::after{
+    content: "/>";
+    color: rgb(48 255 64);
 }
 
 .aside__close{

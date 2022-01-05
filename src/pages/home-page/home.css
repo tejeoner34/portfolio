@@ -1,4 +1,6 @@
 
+
+
 .home{
     width: 100%;
     display: flex;
@@ -41,9 +43,87 @@ section{
     border-radius: 2px;
 }
 
-.home-page__info-container h2{
+.name{
     font-size: 3rem;
     margin: 1rem 0 1rem 0;
+    background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
+  background-clip: text;
+  color: transparent; 
+  margin-bottom: 1px;
+  animation: textOpacity .5s linear 1s;
+  opacity: 0;
+}
+
+@keyframes textOpacity{
+    0%{
+        opacity: 0;
+        transform: translate(0,30px);
+    }
+    50%{
+        opacity: 0;
+        transform: translate(0,30px);
+    }
+    70%{
+        opacity: 0;
+        transform: translate(0,20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+.name-with-opacity{
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
+    background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
+  background-clip: text;
+  color: transparent; 
+  margin-bottom: 1px;
+  opacity: 1;
+}
+
+
+
+.name__bottom-border{
+    width: 100%;
+    float: right;
+    height: 2px;
+    background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
+    animation: slideBarIn 1s linear;
+}
+
+@keyframes slideBarIn{
+    0%{
+        transform:translate(-1000px,0);
+    }
+    75%{
+        transform:translate(20px,0);
+      
+       
+    }
+    100%{
+        transform:translate(0,0);
+        
+    }
+}
+
+.name__writing-line{
+    display: inline-block;
+    opacity: 1;
+    animation: bganim 1s infinite;
+    background-color: white;
+    width: 7px;
+    
+}
+
+@keyframes bganim{
+    0%{
+        opacity:  0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .home-page__info-container p{
@@ -56,6 +136,7 @@ section{
 
 .info-container__hello{
     color: rgb(48 255 64);
+    text-shadow: 1px 1px #16acd9;
 }
 
 .home-page__img-container{
