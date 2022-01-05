@@ -43,6 +43,39 @@
     top: 0;
 }
 
+
+.dialog__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: #103434;
+    color: white;
+    border: solid 2px #3b8b70d1;
+
+    
+
+}
+
+.dialog__img-container{
+    width: 100%;
+    min-width: 375px;
+}
+
+.dialog__img-container img{
+    width: 100%;
+}
+
+.dialog__info{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.dialog__info p{
+    padding: 1rem;
+}
+
 @keyframes buttonSlide {
     0%{
         transform:translate(0,200px)

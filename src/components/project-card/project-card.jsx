@@ -31,13 +31,12 @@ export default function ProjectCard(props) {
     }
 
     const gifContainer = {
-        backgroundImage: `url("${props.data.img}")`,
+        backgroundImage: `url("${props.data.gif}")`,
         backgroundSize: 'cover',
         backgroundPosition: 'top',
-        height: '200px',
-        width: '250px',
-        top: '-10px',
-        left: '-10px',
+        height: '196px',
+        width: '70%',
+        minWidth: '400px',
         borderRadius: '2px'
     }
 
@@ -60,11 +59,18 @@ export default function ProjectCard(props) {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <div style={gifContainer}>
+
+                <div className='dialog__container'>
+                <div className='dialog__img-container'>
+                    <img src={props.data.gif} alt="porject gif" />
+                </div>
+                <div className='dialog__info'>
+                    <h3 style={{color:'rgb(101 251 154)', fontSize: '1.5rem'}}>{'<'} {props.data.name} {'/>'}</h3>
+                    <h4 style={{opacity:'.7'}}>{props.data.tools}</h4>
+                    <p>{props.data.description}</p>
+                    <button className='home-page__projects-button'>Visit the site</button>
 
                 </div>
-                <div>
-
                 </div>
             </Dialog>
         </div>

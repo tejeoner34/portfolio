@@ -1,6 +1,6 @@
 import './header.css';
 import Box from '@mui/material/Box';
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
@@ -9,6 +9,27 @@ import {scroller} from 'react-scroll';
 
 export default function Header() {
 
+
+
+
+    const [onScrollClass, setOnScrollClass] = useState('header');
+    const [prevPosition, setPrevPosition] = useState(0);
+    const onScrollHeader = () =>{
+        const currentScrollPosition = window.pageYOffset;
+        if(currentScrollPosition>prevPosition){
+            setOnScrollClass('headerOut')
+        }
+        if(currentScrollPosition<prevPosition){
+            setOnScrollClass('header')
+        }
+        setPrevPosition(currentScrollPosition);
+    };
+    
+    useEffect(()=>{
+        window.addEventListener('scroll', onScrollHeader);
+        return ()=> window.removeEventListener('scroll', onScrollHeader);
+    }, [prevPosition, onScrollClass, onScrollHeader])
+    
 
 
     const [isOpen, setOpen] = useState(false)
@@ -48,7 +69,7 @@ export default function Header() {
 
     return (
         <Fragment>
-            <header className="header">
+            <header className={onScrollClass}>
 
                 <nav className='header__nav'>
                     <ul className='header__ul'>

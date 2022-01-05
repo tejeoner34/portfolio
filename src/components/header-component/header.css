@@ -3,6 +3,34 @@
     position: fixed;
     right: 10px;
     z-index: 100;
+    animation: headerSlide .4s;
+}
+
+@keyframes headerSlide{
+    0%{
+        transform:translate(0,-200px)
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+.headerOut{
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: -200px;
+    z-index: 100;
+    animation: headerOut .4s;
+}
+
+@keyframes headerOut{
+    0%{
+        transform: translate(0,200px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 .header__nav{
@@ -23,7 +51,7 @@
 
 .aside{
     color: white;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
@@ -76,6 +104,7 @@
     width: 1000px;
     height: 1000px;
     position: absolute;
+    right: 0;
     z-index: 0;
 }
 
