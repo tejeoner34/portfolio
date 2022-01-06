@@ -6,7 +6,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.contact-aside{
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    opacity: .7;
+}
+
+.contact-aside__icons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    cursor: pointer;
+}
+
+.contact-aside__icons svg{
+    transition: .3s ease;
+}
+
+.contact-aside__icons svg:hover{
+    transform: scale(1.2);
+    color: rgb(56, 228, 150) ;
+}
+
+.contact-aside__stripe{
+    height: 60px;
+    width: 2px;
+    background-color: white;
 }
 
 section{
@@ -39,8 +73,9 @@ section{
     height: 200px;
     width: 200px;
     background-color: transparent;
-    border: solid 1px green;
+    border: solid 1px rgb(48 255 64);
     border-radius: 2px;
+    margin-top: 2.5rem;
 }
 
 .name{
@@ -141,21 +176,35 @@ section{
 
 .home-page__img-container{
     order: 0;
+    box-shadow: 6px 4px 3px #102c26;
+}
+
+
+
+.projects__p{
+    margin: auto;
+    max-width: 500px;
+    padding: 2rem;
 }
 
 .home-page__projects-button{
     color: palegreen;
     width: 250px;
     height: 50px;
-    background-color: transparent;
+    /* background-color: transparent; */
     border: 1px solid palegreen;
     border-radius: 3px;
+    background: linear-gradient(to left, transparent 50%, teal 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out;
 }
 
 .home-page__projects-button:hover{
-    background-color: rgb(65, 80, 71);
+    background-position: left;
     cursor: pointer;
 }
+
 
 /* .home-page__about-me{
     display: flex;
@@ -189,7 +238,7 @@ section{
     content: "";
     display: block;
     position: relative;
-    width: 300px;
+    width: 80%;
     height: 1px;
     top: 3px;
     margin-left: 20px;
@@ -213,7 +262,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: .5rem;
+    gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }

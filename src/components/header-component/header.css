@@ -41,8 +41,23 @@
 
 .header__ul{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
+}
+
+.header__item::before{
+    content: "<";
+    color: rgb(48 255 64);
+}
+
+.header__item::after{
+    content: "/>";
+    color: rgb(48 255 64);
+}
+
+.header__item:hover{
+    cursor: pointer;
+    color: rgb(48 255 64);
 }
 
 .header__mobile{
@@ -123,7 +138,7 @@
 }
 
 
-@media (max-width:600px){
+@media (max-width:900px){
     .header__ul{
         display: none;
     }

@@ -13,6 +13,8 @@ import kanbanGif from '../../assets/gif/kanban.gif';
 import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
 import { useState } from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export default function Home() {
@@ -62,7 +64,6 @@ export default function Home() {
 
     const [nameClass, setNameClass] = useState('name')
 
-    const name = document.getElementsByClassName('name');
     
     const intervalForName = () =>{
         setTimeout(() => {
@@ -105,6 +106,15 @@ export default function Home() {
 
     return (
         <div className="home">
+            <aside className='contact-aside'>
+            <div className='contact-aside__icons'>
+            <a rel="stylesheet" href="https://github.com/tejeoner34/" target="_blank" ><GitHubIcon/></a>
+            <a rel="stylesheet" href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US" target="_blank"><LinkedInIcon></LinkedInIcon></a>
+            </div>
+            <div className='contact-aside__stripe'></div>
+
+
+            </aside>
             <section className='home-page__container'>
                 <div className="home-page__info-container">
                     <div>
@@ -150,7 +160,7 @@ export default function Home() {
             <section className='home-page__projects'>
                 <div>
                     <h2 className='home__heading'>Projects</h2>
-                    <p>Here you can see a list of projects I have worked on. They are listed following my learning path. Going from pure HTML and CSS to a full end to end WebSite</p>
+                    <p className='projects__p'>Here you can see a list of projects I have worked on. They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>. Going from pure HTML and CSS to a <span className='home-page__info__p-outstanding'>full end to end WebSite</span></p>
                 </div>
                 <div className='projects__container'>
 

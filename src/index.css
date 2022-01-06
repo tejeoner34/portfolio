@@ -8,10 +8,14 @@ body {
   height: 100%;
   max-width: 990px;
   position: relative;
-  background: linear-gradient(#0a1218, #214e4a, #0a1218);
+  background: linear-gradient(#0a1218, #193936, #0a1218);
   color: white;
 }
 
 body p{
   opacity: .7;
+}
+
+a{
+  color: inherit;
 }

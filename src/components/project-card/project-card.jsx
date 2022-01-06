@@ -27,38 +27,40 @@ export default function ProjectCard(props) {
     }
 
     return (
-        <div className='project__card'>
-            <div className='card__img' style={imgContainerStyle}>
+        <div className='project-card__envelope'>
+            <div className='project__card'>
+                <div className='card__img' style={imgContainerStyle}>
 
+                </div>
+                <div className='card__back'>
+                    <div>
+                        <h3>{props.data.name}</h3>
+                        <p>{props.data.tools}</p>
+                    </div>
+                    <button onClick={handleClickOpen}>View Details</button>
+                    <button>Visit</button>
+                </div>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+
+                    <div className='dialog__container'>
+                        <div className='dialog__img-container'>
+                            <img src={props.data.gif} alt="porject gif" />
+                        </div>
+                        <div className='dialog__info'>
+                            <h3 style={{ color: 'rgb(101 251 154)', fontSize: '1.5rem' }}>{'<'} {props.data.name} {'/>'}</h3>
+                            <h4 style={{ opacity: '.7' }}>{props.data.tools}</h4>
+                            <p>{props.data.description}</p>
+                            <button className='home-page__projects-button'>Visit the site</button>
+
+                        </div>
+                    </div>
+                </Dialog>
             </div>
-            <div className='card__back'>
-                <div>
-                    <h3>{props.data.name}</h3>
-                    <p>{props.data.tools}</p>
-                </div>
-                <button onClick={handleClickOpen}>View Details</button>
-                <button>Visit</button>
-            </div>
-            <Dialog
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-            >
-
-                <div className='dialog__container'>
-                <div className='dialog__img-container'>
-                    <img src={props.data.gif} alt="porject gif" />
-                </div>
-                <div className='dialog__info'>
-                    <h3 style={{color:'rgb(101 251 154)', fontSize: '1.5rem'}}>{'<'} {props.data.name} {'/>'}</h3>
-                    <h4 style={{opacity:'.7'}}>{props.data.tools}</h4>
-                    <p>{props.data.description}</p>
-                    <button className='home-page__projects-button'>Visit the site</button>
-
-                </div>
-                </div>
-            </Dialog>
         </div>
     )
 }

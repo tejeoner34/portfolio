@@ -78,7 +78,7 @@ export default function Header() {
                         <li onClick={handleScrollAbout} className='header__item'>About</li>
                     </ul>
 
-                    <Box onClose={handleClose} className='header__mobile' display={{ xs: 'flex', sm: 'none' }} sx={{ alignItems: 'center', textAlign: 'center' }}>
+                    <Box onClose={handleClose} className='header__mobile' display={{ xs: 'flex', md: 'none' }} sx={{ alignItems: 'center', textAlign: 'center' }}>
 
                        
                             <IconButton
