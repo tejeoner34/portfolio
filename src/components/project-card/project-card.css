@@ -40,13 +40,19 @@
     color: palegreen;
     width: 150px;
     padding: .5rem 0 .5rem 0;
-    background-color: transparent;
+    background: linear-gradient(45deg, teal 50%, transparent 50%);
+    background-size: auto 650%;
     border: 1px solid palegreen;
     border-radius: 3px;
     cursor: pointer;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out;
     
 }
 
+.card__back button:hover{
+    background-position: bottom;
+}
 
 
 .card__img:hover + .card__back{
@@ -61,6 +67,8 @@
     transition: .9s ease;
     animation: buttonSlide .5s ease-in;
 }
+
+
 
 
 .dialog__container{

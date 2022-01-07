@@ -38,7 +38,7 @@ export default function ProjectCard(props) {
                         <p>{props.data.tools}</p>
                     </div>
                     <button onClick={handleClickOpen}>View Details</button>
-                    <button>Visit</button>
+                    <a href={props.data.url} target="_blank" rel="noopener noreferrer"><button>Visit</button></a>
                 </div>
                 <Dialog
                     open={open}
@@ -55,7 +55,7 @@ export default function ProjectCard(props) {
                             <h3 style={{ color: 'rgb(101 251 154)', fontSize: '1.5rem' }}>{'<'} {props.data.name} {'/>'}</h3>
                             <h4 style={{ opacity: '.7' }}>{props.data.tools}</h4>
                             <p>{props.data.description}</p>
-                            <button className='home-page__projects-button'>Visit the site</button>
+                            <a href={props.data.url} target="_blank" rel="noopener noreferrer"><button className='home-page__projects-button'>Visit the site</button></a>
 
                         </div>
                     </div>
