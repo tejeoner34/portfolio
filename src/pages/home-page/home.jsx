@@ -56,7 +56,7 @@ export default function Home() {
         },
         {
             name: "Weather App",
-            tools: "HTML / CSS / MUI / React / JS",
+            tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS",
             img: weatherImg,
             gif: weatherAppGif,
             description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming",
@@ -65,7 +65,7 @@ export default function Home() {
         },
         {
             name: "Japongo Project",
-            tools: "HTML / CSS / MUI / React / JS / NodeJS / MongoDB",
+            tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS / MongoDB",
             img: japongoImg,
             gif: japongoGif,
             description: "My favourite project so far. Full end to end application using MERN stack. It consists of a business website which allows to search for schools in Tokyo and has a private area with online courses",
@@ -174,9 +174,12 @@ export default function Home() {
 
             </section>
             <section className='home-page__projects'>
-                <div>
+                <div className='projects__info'> 
                     <h2 className='home__heading'>Projects</h2>
-                    <p className='projects__p'>Here you can see a list of projects I have worked on. They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>. Going from pure HTML and CSS to a <span className='home-page__info__p-outstanding'>full end to end WebSite</span></p>
+                    <p className='projects__p'>Here you can see a list of projects I have been working on.
+                     They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>.
+                      Going from pure HTML and CSS (first project) to a <span className='home-page__info__p-outstanding'>full end to end WebSite (last project, "Japongo Project")</span></p>
+                    <p className='projects__p'>*The projects that have a back-end have been deployed using Heroku, so please take into consideration that the first time you enter in the site, it may take a few seconds for the server to respond.</p>
                 </div>
                 <div className='projects__container'>
 

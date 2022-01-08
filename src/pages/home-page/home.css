@@ -212,14 +212,6 @@ section{
     box-shadow: 6px 4px 3px #102c26;
 }
 
-
-
-.projects__p{
-    margin: auto;
-    max-width: 500px;
-    padding: 2rem;
-}
-
 .home-page__projects-button{
     color: palegreen;
     width: 250px;
@@ -227,7 +219,7 @@ section{
     /* background-color: transparent; */
     border: 1px solid palegreen;
     border-radius: 3px;
-    background: linear-gradient(to left, transparent 50%, teal 50%);
+    background: linear-gradient(to left, transparent 50%, rgb(1, 99, 94) 50%);
     background-size: 200%;
     background-position: right;
     transition: background-position 0.5s ease-in-out;
@@ -291,6 +283,10 @@ section{
     
 }
 
+.home-page__projects{
+    gap: 3rem;
+}
+
 .projects__container{
     width: 100%;
     display: flex;
@@ -298,6 +294,20 @@ section{
     gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+}
+
+
+.projects__p{
+    margin: auto;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+
+.projects__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 

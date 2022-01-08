@@ -14,30 +14,45 @@ export default function Header() {
 
     const [onScrollClass, setOnScrollClass] = useState('header');
     const [prevPosition, setPrevPosition] = useState(0);
-    const onScrollHeader = () =>{
-        const currentScrollPosition = window.pageYOffset;
-        if(currentScrollPosition>prevPosition){
-            setOnScrollClass('headerOut')
-        }
-        if(currentScrollPosition<prevPosition){
-            setOnScrollClass('header')
-        }
-        setPrevPosition(currentScrollPosition);
-    };
+    
     
     useEffect(()=>{
+        const onScrollHeader = () =>{
+            const currentScrollPosition = window.pageYOffset;
+            if(currentScrollPosition>prevPosition){
+                setOnScrollClass('headerOut')
+            }
+            if(currentScrollPosition<prevPosition){
+                setOnScrollClass('header')
+            }
+            setPrevPosition(currentScrollPosition);
+        };
         window.addEventListener('scroll', onScrollHeader);
         return ()=> window.removeEventListener('scroll', onScrollHeader);
-    }, [prevPosition, onScrollClass, onScrollHeader])
+    }, [prevPosition, onScrollClass])
     
 
 
     const [isOpen, setOpen] = useState(false)
     const handleClick = (event) => {
+        if(isOpen === false){
+            document.body.style.overflow = "hidden";
+            document.querySelector('.header__mobile').style.marginRight = '15px'
+
+        }
+        if(isOpen === true){
+            document.body.style.overflow = "visible";
+            document.querySelector('.header__mobile').style.marginRight = '0'
+
+        }
         setOpen(!isOpen)
     };
     const handleClose = () => {
         setOpen(false)
+        document.body.style.overflow = "visible"
+        document.querySelector('.header__mobile').style.marginRight = '0'
+
+
     };
 
     const handleScrollProjects = ()=>{

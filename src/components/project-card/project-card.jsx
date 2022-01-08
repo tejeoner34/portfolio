@@ -1,6 +1,7 @@
 import './project-card.css';
 import * as React from 'react';
 import Dialog from '@mui/material/Dialog';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 export default function ProjectCard(props) {
@@ -47,6 +48,7 @@ export default function ProjectCard(props) {
                     aria-describedby="alert-dialog-description"
                 >
 
+
                     <div className='dialog__container'>
                         <div className='dialog__img-container'>
                             <img src={props.data.gif} alt="porject gif" />
@@ -57,6 +59,9 @@ export default function ProjectCard(props) {
                             <p>{props.data.description}</p>
                             <a href={props.data.url} target="_blank" rel="noopener noreferrer"><button className='home-page__projects-button'>Visit the site</button></a>
 
+                        </div>
+                        <div onClick={handleClose} className='dialog__close-icon-container'>
+                            <CloseIcon></CloseIcon>
                         </div>
                     </div>
                 </Dialog>

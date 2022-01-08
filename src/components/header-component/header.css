@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 100;
     animation: headerSlide .4s;
+    background: #0a1218;
 }
 
 @keyframes headerSlide{
@@ -17,12 +18,14 @@
 }
 
 .headerOut{
+    width: 100%;
     color: white;
     position: fixed;
     right: 0px;
     top: -200px;
     z-index: 100;
     animation: headerOut 1s;
+    background: #0a1218;
 }
 
 @keyframes headerOut{
@@ -143,6 +146,17 @@
     .header__ul{
         display: none;
     }
+    .header{
+        background: transparent;
+    }
+
+    .headerOut{
+        background: transparent;
+    }
+}
+
+@media (min-width:900px){
+    
 }
 
 
