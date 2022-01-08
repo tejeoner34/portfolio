@@ -14,7 +14,7 @@ import kanbanGif from '../../assets/gif/kanban.gif';
 import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
 import weatherAppGif from '../../assets/gif/weather-app.gif';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -73,8 +73,47 @@ export default function Home() {
         },
     ]
 
-    const [nameClass, setNameClass] = useState('name')
+    const [nameClass, setNameClass] = useState('name');
+    const [onScrollClass, setOnScrollClass] = useState('')
+    const [onScrollClassProjects, setOnScrollClassProjects] = useState('')
+    const aboutRef = useRef()
+    const projectsRef = useRef()
+    
 
+    
+
+   
+
+    useEffect(()=>{
+
+        const onChange = (entries) =>{
+            entries.forEach(el=>{
+                if(el.isIntersecting && el.target.className.includes('about-me'))setOnScrollClass('home-page__onOpacity')
+                if(el.isIntersecting && el.target.className.includes('projects'))setOnScrollClassProjects('home-page__onOpacity-projects')
+            })
+            // const about = entries[0];
+            // const project = entries[1];
+
+            // if(about.isIntersecting) setOnScrollClass('home-page__onOpacity');
+            // if(project.isIntersecting) setOnScrollClass('home-page__onOpacity');
+
+            
+
+        }
+    
+        const observer = new IntersectionObserver(onChange, {
+            rootMargin:'0px'
+        })
+    
+        const toObserve = [projectsRef.current, aboutRef.current]
+        toObserve.forEach(element =>{
+            if(element)observer.observe(element)
+        })
+
+    
+        // observer.observe(aboutRef.current)
+        // observer.observe(projectsRef.current)
+    })
 
     const intervalForName = () => {
         setTimeout(() => {
@@ -131,7 +170,7 @@ export default function Home() {
                 </div>
                 <div className='contact-aside__stripe'></div>
             </aside>
-            <section className='home-page__container'>
+            <section className='home-page__intro home-page__container'>
                 <div className="home-page__info-container">
                     <div>
                         <p className='info-container__hello'>Hi, my name is</p>
@@ -146,7 +185,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='home-page__about-me'>
+            <section ref={aboutRef} className={`home-page__section home-page__about-me ${onScrollClass}`}>
                 <h2 className='home__heading'>About me</h2>
                 <div className='about-me__container'>
                     <div className='home-page__profile-img__container'>
@@ -173,7 +212,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='home-page__projects'>
+            <section ref={projectsRef} className={`home-page__section home-page__projects ${onScrollClassProjects}`}>
                 <div className='projects__info'> 
                     <h2 className='home__heading'>Projects</h2>
                     <p className='projects__p'>Here you can see a list of projects I have been working on.
