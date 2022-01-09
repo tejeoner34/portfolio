@@ -57,20 +57,24 @@ export default function Header() {
 
     const handleScrollProjects = ()=>{
         scroller.scrollTo("home-page__projects", {
-            duration: 800,
+            duration: 200,
             delay: 0,
             smooth: "easeInOutQuart",
           });
         handleClose();
+        scroller.unmount();
+
     }
 
     const handleScrollAbout = ()=>{
         scroller.scrollTo("home-page__about-me", {
-            duration: 800,
+            duration: 300,
             delay: 0,
             smooth: "easeInOutQuart",
           });
+          
         handleClose();
+        scroller.unmount();
     }
 
     const handleScrollHome = ()=>{
@@ -80,6 +84,8 @@ export default function Header() {
             smooth: "easeInOutQuart",
           });
         handleClose();
+        scroller.unmount();
+
     }
 
     return (

@@ -59,7 +59,7 @@ export default function Home() {
             tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS",
             img: weatherImg,
             gif: weatherAppGif,
-            description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming",
+            description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming.",
             url: "https://tejeoner34.github.io/weather-page/"
 
         },
@@ -125,10 +125,12 @@ export default function Home() {
 
     const handleProjectsButton = () => {
         scroller.scrollTo("home-page__projects", {
-            duration: 800,
+            duration: 200,
             delay: 0,
             smooth: "easeInOutQuart",
         });
+        scroller.unmount();
+
     };
 
     const handleAboutButton = () => {
@@ -137,6 +139,7 @@ export default function Home() {
             delay: 0,
             smooth: "easeInOutQuart",
         });
+        scroller.unmount()
     }
 
 
@@ -173,12 +176,12 @@ export default function Home() {
             <section className='home-page__intro home-page__container'>
                 <div className="home-page__info-container">
                     <div>
-                        <p className='info-container__hello'>Hi, my name is</p>
+                        <p className='info-container__hello'>Welcome, my name is</p>
                         <div className='nameWrapper'>
                             <h2 className={nameClass}>Álvaro Tejedor<div className='name__writing-line'>|</div></h2>
                             <div className='name__bottom-border'></div>
                         </div>
-                        <p>Junior Full Stack Developer</p>
+                        <p>Junior Front-end Developer</p>
                     </div>
                     <button onClick={handleProjectsButton} className='home-page__projects-button' >Go to Projects!</button>
                     <button onClick={handleAboutButton} className='home-page__projects-button' >About Me</button>
@@ -196,14 +199,17 @@ export default function Home() {
 
                         <p>
                             Hello! My name is Alvaro, I started my career studying and working in the <span className='home-page__info__p-outstanding'>business and marketing</span> world.
-                            After some years of experience in both big companies (EA, KIA...) and Start Ups, I have decided to jump into the programming world.
+                            After some years of experience in both big companies (EA, KIA...) and Start Ups, I decided to jump into the programming world.
                         </p>
                         <p>
                             To accomplish this I have both been studying on my own as well as enrolling into a <span className='home-page__info__p-outstanding'>Full Stack programming Bootcamp</span>.
-                            Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>.
+                            Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>, working in projects both with front and back-end.
                         </p>
                         <p>
                             Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Redux</span>.
+                        </p>
+                        <p>
+                            For further information feel free to visit my <a className='inline-links' href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US">LinkedIn</a> profile.
                         </p>
                     </div>
                     <div className='about-me__img-container'>

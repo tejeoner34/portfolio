@@ -10,6 +10,7 @@ body {
   position: relative;
   background: linear-gradient(#0a1218, #193936, #0a1218);
   color: white;
+  overflow-x: hidden;
 }
 
 body p{
