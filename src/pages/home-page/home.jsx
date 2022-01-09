@@ -14,7 +14,7 @@ import kanbanGif from '../../assets/gif/kanban.gif';
 import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
 import weatherAppGif from '../../assets/gif/weather-app.gif';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -59,7 +59,7 @@ export default function Home() {
             tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS",
             img: weatherImg,
             gif: weatherAppGif,
-            description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming",
+            description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming.",
             url: "https://tejeoner34.github.io/weather-page/"
 
         },
@@ -73,8 +73,47 @@ export default function Home() {
         },
     ]
 
-    const [nameClass, setNameClass] = useState('name')
+    const [nameClass, setNameClass] = useState('name');
+    const [onScrollClass, setOnScrollClass] = useState('')
+    const [onScrollClassProjects, setOnScrollClassProjects] = useState('')
+    const aboutRef = useRef()
+    const projectsRef = useRef()
+    
 
+    
+
+   
+
+    useEffect(()=>{
+
+        const onChange = (entries) =>{
+            entries.forEach(el=>{
+                if(el.isIntersecting && el.target.className.includes('about-me'))setOnScrollClass('home-page__onOpacity')
+                if(el.isIntersecting && el.target.className.includes('projects'))setOnScrollClassProjects('home-page__onOpacity-projects')
+            })
+            // const about = entries[0];
+            // const project = entries[1];
+
+            // if(about.isIntersecting) setOnScrollClass('home-page__onOpacity');
+            // if(project.isIntersecting) setOnScrollClass('home-page__onOpacity');
+
+            
+
+        }
+    
+        const observer = new IntersectionObserver(onChange, {
+            rootMargin:'0px'
+        })
+    
+        const toObserve = [projectsRef.current, aboutRef.current]
+        toObserve.forEach(element =>{
+            if(element)observer.observe(element)
+        })
+
+    
+        // observer.observe(aboutRef.current)
+        // observer.observe(projectsRef.current)
+    })
 
     const intervalForName = () => {
         setTimeout(() => {
@@ -86,10 +125,12 @@ export default function Home() {
 
     const handleProjectsButton = () => {
         scroller.scrollTo("home-page__projects", {
-            duration: 800,
+            duration: 200,
             delay: 0,
             smooth: "easeInOutQuart",
         });
+        scroller.unmount();
+
     };
 
     const handleAboutButton = () => {
@@ -98,6 +139,7 @@ export default function Home() {
             delay: 0,
             smooth: "easeInOutQuart",
         });
+        scroller.unmount()
     }
 
 
@@ -131,22 +173,22 @@ export default function Home() {
                 </div>
                 <div className='contact-aside__stripe'></div>
             </aside>
-            <section className='home-page__container'>
+            <section className='home-page__intro home-page__container'>
                 <div className="home-page__info-container">
                     <div>
-                        <p className='info-container__hello'>Hi, my name is</p>
+                        <p className='info-container__hello'>Welcome, my name is</p>
                         <div className='nameWrapper'>
                             <h2 className={nameClass}>Álvaro Tejedor<div className='name__writing-line'>|</div></h2>
                             <div className='name__bottom-border'></div>
                         </div>
-                        <p>Junior Full Stack Developer</p>
+                        <p>Junior Front-end Developer</p>
                     </div>
                     <button onClick={handleProjectsButton} className='home-page__projects-button' >Go to Projects!</button>
                     <button onClick={handleAboutButton} className='home-page__projects-button' >About Me</button>
                 </div>
 
             </section>
-            <section className='home-page__about-me'>
+            <section ref={aboutRef} className={`home-page__section home-page__about-me ${onScrollClass}`}>
                 <h2 className='home__heading'>About me</h2>
                 <div className='about-me__container'>
                     <div className='home-page__profile-img__container'>
@@ -157,14 +199,17 @@ export default function Home() {
 
                         <p>
                             Hello! My name is Alvaro, I started my career studying and working in the <span className='home-page__info__p-outstanding'>business and marketing</span> world.
-                            After some years of experience in both big companies (EA, KIA...) and Start Ups, I have decided to jump into the programming world.
+                            After some years of experience in both big companies (EA, KIA...) and Start Ups, I decided to jump into the programming world.
                         </p>
                         <p>
                             To accomplish this I have both been studying on my own as well as enrolling into a <span className='home-page__info__p-outstanding'>Full Stack programming Bootcamp</span>.
-                            Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>.
+                            Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>, working in projects both with front and back-end.
                         </p>
                         <p>
                             Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Redux</span>.
+                        </p>
+                        <p>
+                            For further information feel free to visit my <a className='inline-links' href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US">LinkedIn</a> profile.
                         </p>
                     </div>
                     <div className='about-me__img-container'>
@@ -173,7 +218,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='home-page__projects'>
+            <section ref={projectsRef} className={`home-page__section home-page__projects ${onScrollClassProjects}`}>
                 <div className='projects__info'> 
                     <h2 className='home__heading'>Projects</h2>
                     <p className='projects__p'>Here you can see a list of projects I have been working on.
