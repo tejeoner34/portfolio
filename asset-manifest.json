@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.714e165c.css",
-    "main.js": "/portfolio/static/js/main.71a78995.js",
-    "static/js/787.ac3da9cc.chunk.js": "/portfolio/static/js/787.ac3da9cc.chunk.js",
-    "static/media/japongo.gif": "/portfolio/static/media/japongo.da516d544eeae029ea68.gif",
-    "static/media/landing-page.gif": "/portfolio/static/media/landing-page.404936e5d6db2465b0f8.gif",
-    "static/media/weather-app.gif": "/portfolio/static/media/weather-app.bcf5f813bffe30809456.gif",
-    "static/media/rick-morty.gif": "/portfolio/static/media/rick-morty.3a9b8671943ada016282.gif",
-    "static/media/kanban.PNG": "/portfolio/static/media/kanban.2172c22134663d8a9708.PNG",
-    "static/media/japongo.PNG": "/portfolio/static/media/japongo.e40ab344b792a418b094.PNG",
-    "static/media/tetris.gif": "/portfolio/static/media/tetris.9dc55169988e5f95889c.gif",
-    "static/media/kanban.gif": "/portfolio/static/media/kanban.dfaa65dae824a4e18341.gif",
-    "static/media/foto-cv.jpg": "/portfolio/static/media/foto-cv.caa9c5276d5789e13cff.jpg",
-    "static/media/weather-app.PNG": "/portfolio/static/media/weather-app.b224706fb6b6ccea1ff3.PNG",
-    "static/media/html-project.PNG": "/portfolio/static/media/html-project.a0eae25fe0711221a705.PNG",
-    "static/media/rick-morty.PNG": "/portfolio/static/media/rick-morty.566bbd55d2906707e097.PNG",
-    "static/media/tetris.PNG": "/portfolio/static/media/tetris.3b6dfc76d1961ccf50aa.PNG",
-    "index.html": "/portfolio/index.html",
-    "main.714e165c.css.map": "/portfolio/static/css/main.714e165c.css.map",
-    "main.71a78995.js.map": "/portfolio/static/js/main.71a78995.js.map",
-    "787.ac3da9cc.chunk.js.map": "/portfolio/static/js/787.ac3da9cc.chunk.js.map"
+    "main.css": "/static/css/main.714e165c.css",
+    "main.js": "/static/js/main.21e930fe.js",
+    "static/js/787.ac3da9cc.chunk.js": "/static/js/787.ac3da9cc.chunk.js",
+    "static/media/japongo.gif": "/static/media/japongo.da516d544eeae029ea68.gif",
+    "static/media/landing-page.gif": "/static/media/landing-page.404936e5d6db2465b0f8.gif",
+    "static/media/weather-app.gif": "/static/media/weather-app.bcf5f813bffe30809456.gif",
+    "static/media/rick-morty.gif": "/static/media/rick-morty.3a9b8671943ada016282.gif",
+    "static/media/kanban.PNG": "/static/media/kanban.2172c22134663d8a9708.PNG",
+    "static/media/japongo.PNG": "/static/media/japongo.e40ab344b792a418b094.PNG",
+    "static/media/tetris.gif": "/static/media/tetris.9dc55169988e5f95889c.gif",
+    "static/media/kanban.gif": "/static/media/kanban.dfaa65dae824a4e18341.gif",
+    "static/media/foto-cv.jpg": "/static/media/foto-cv.caa9c5276d5789e13cff.jpg",
+    "static/media/weather-app.PNG": "/static/media/weather-app.b224706fb6b6ccea1ff3.PNG",
+    "static/media/html-project.PNG": "/static/media/html-project.a0eae25fe0711221a705.PNG",
+    "static/media/rick-morty.PNG": "/static/media/rick-morty.566bbd55d2906707e097.PNG",
+    "static/media/tetris.PNG": "/static/media/tetris.3b6dfc76d1961ccf50aa.PNG",
+    "index.html": "/index.html",
+    "main.714e165c.css.map": "/static/css/main.714e165c.css.map",
+    "main.21e930fe.js.map": "/static/js/main.21e930fe.js.map",
+    "787.ac3da9cc.chunk.js.map": "/static/js/787.ac3da9cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.714e165c.css",
-    "static/js/main.71a78995.js"
+    "static/js/main.21e930fe.js"
   ]
 }
