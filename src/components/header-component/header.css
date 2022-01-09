@@ -70,6 +70,9 @@
 
 .header__mobile{
     z-index: 10;
+    position: fixed;
+    right: 10px;
+    top: 10px;
 }
 
 .aside{
@@ -81,6 +84,7 @@
     width: 50vw;
     background: linear-gradient(
         45deg, #213a3c, #182a37);
+    -webkit-animation: slide .3s;
     animation: slide .3s;
     z-index: 1;
     display: flex;

@@ -49,6 +49,7 @@
     cursor: pointer;
     background-position: top;
     transition: background-position 0.5s ease-in-out;
+    font-size: 1.1rem;
     
 }
 

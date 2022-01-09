@@ -131,6 +131,7 @@
   background-clip: text;
   color: transparent; 
   margin-bottom: 1px;
+  -webkit-animation: textOpacity .5s linear 1s;
   animation: textOpacity .5s linear 1s;
   opacity: 0;
 }
@@ -138,18 +139,22 @@
 @keyframes textOpacity{
     0%{
         opacity: 0;
+        -webkit-transform: translate(0,30px);
         transform: translate(0,30px);
     }
     50%{
         opacity: 0;
+        -webkit-transform: translate(0,30px);
         transform: translate(0,30px);
     }
     70%{
         opacity: 0;
+        -webkit-transform: translate(0,20px);
         transform: translate(0,20px);
     }
     100%{
         opacity: 1;
+        -webkit-transform: translate(0,0);
         transform: translate(0,0);
     }
 }
@@ -171,19 +176,23 @@
     float: right;
     height: 2px;
     background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
+    -webkit-animation: slideBarIn 1s linear;
     animation: slideBarIn 1s linear;
 }
 
 @keyframes slideBarIn{
     0%{
+        -webkit-transform: translate(-1000px,0);
         transform:translate(-1000px,0);
     }
     75%{
+        -webkit-transform: translate(20px,0);
         transform:translate(20px,0);
       
        
     }
     100%{
+        -webkit-transform: translate(0,0);
         transform:translate(0,0);
         
     }
@@ -192,6 +201,7 @@
 .name__writing-line{
     display: inline-block;
     opacity: 1;
+    -webkit-animation: bganim 1s infinite;
     animation: bganim 1s infinite;
     background-color: white;
     width: 7px;
@@ -245,6 +255,7 @@
 
 
 .home-page__onOpacity{
+    -webkit-animation: opacityOn 1s ease;
     animation: opacityOn 1s ease;
     opacity: 1;
 }
@@ -253,6 +264,7 @@
     0%{
         
         opacity: 0;
+        -webkit-transform: translate(-200px);
         transform: translateX(-200px);
     }
     75%{
@@ -260,12 +272,14 @@
     }
     100%{
         opacity: 1;
+        -webkit-transform: translate(0);
         transform: translateX(0);
 
     }
 }
 
 .home-page__onOpacity-projects{
+    -webkit-animation: opacityOnProjects 1s ease;
     animation: opacityOnProjects 1s ease;
     opacity: 1;
 }
@@ -273,6 +287,7 @@
 @keyframes opacityOnProjects{
     0%{
         opacity: 0;
+        -webkit-transform: translate(-200px);
         transform: translateX(-200px);
     }
     75%{
@@ -280,6 +295,7 @@
     }
     100%{
         opacity: 1;
+        -webkit-transform: translate(0);
         transform: translateX(0);
 
     }
@@ -370,6 +386,9 @@
     }
     .email-aside{
         display: none;
+    }
+    .home-page__projects-button{
+        width: 200px;
     }
 }
 
