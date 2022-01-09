@@ -6,7 +6,7 @@ import Home from './pages/home-page/home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/portfolio'>
     <Header />
     <Switch>
     <Route exact path='/'>
