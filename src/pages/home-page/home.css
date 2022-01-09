@@ -333,6 +333,14 @@
     gap: 3rem;
 }
 
+.home-page__projects p{
+    font-size: 1.1rem;
+}
+
+.home-page__about-me p{
+    font-size: 1.1rem;
+}
+
 .projects__container{
     width: 100%;
     display: flex;
