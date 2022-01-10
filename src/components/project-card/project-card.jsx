@@ -34,7 +34,7 @@ export default function ProjectCard(props) {
 
                 </div>
                 <div className='card__back'>
-                    <div>
+                    <div className='card__back__info'>
                         <h3>{props.data.name}</h3>
                         <p>{props.data.tools}</p>
                     </div>
