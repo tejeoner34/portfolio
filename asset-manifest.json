@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.421e9c4b.css",
-    "main.js": "/static/js/main.8d7cc9c9.js",
+    "main.css": "/static/css/main.d5e25c8c.css",
+    "main.js": "/static/js/main.32a57925.js",
     "static/js/787.ac3da9cc.chunk.js": "/static/js/787.ac3da9cc.chunk.js",
     "static/media/japongo.gif": "/static/media/japongo.da516d544eeae029ea68.gif",
     "static/media/landing-page.gif": "/static/media/landing-page.404936e5d6db2465b0f8.gif",
@@ -17,12 +17,12 @@
     "static/media/rick-morty.PNG": "/static/media/rick-morty.566bbd55d2906707e097.PNG",
     "static/media/tetris.PNG": "/static/media/tetris.3b6dfc76d1961ccf50aa.PNG",
     "index.html": "/index.html",
-    "main.421e9c4b.css.map": "/static/css/main.421e9c4b.css.map",
-    "main.8d7cc9c9.js.map": "/static/js/main.8d7cc9c9.js.map",
+    "main.d5e25c8c.css.map": "/static/css/main.d5e25c8c.css.map",
+    "main.32a57925.js.map": "/static/js/main.32a57925.js.map",
     "787.ac3da9cc.chunk.js.map": "/static/js/787.ac3da9cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.421e9c4b.css",
-    "static/js/main.8d7cc9c9.js"
+    "static/css/main.d5e25c8c.css",
+    "static/js/main.32a57925.js"
   ]
 }
