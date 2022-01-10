@@ -125,7 +125,9 @@
 }
 
 .name{
-    font-size: 3rem;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
     background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
   background-clip: text;
@@ -160,7 +162,9 @@
 }
 
 .name-with-opacity{
-    font-size: 3rem;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
     background: linear-gradient(to left, rgb(247, 247, 247),rgb(56, 228, 150));
   background-clip: text;
@@ -316,6 +320,9 @@
 }
 
 .home__heading{
+    font-family: 'Orelega One', cursive;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1rem;
     display: flex;
     align-items: center;
     padding-left: 1rem;
