@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5e25c8c.css",
-    "main.js": "/static/js/main.32a57925.js",
+    "main.css": "/static/css/main.e6bc9728.css",
+    "main.js": "/static/js/main.fade9970.js",
     "static/js/787.ac3da9cc.chunk.js": "/static/js/787.ac3da9cc.chunk.js",
     "static/media/japongo.gif": "/static/media/japongo.da516d544eeae029ea68.gif",
     "static/media/landing-page.gif": "/static/media/landing-page.404936e5d6db2465b0f8.gif",
@@ -15,14 +15,15 @@
     "static/media/weather-app.PNG": "/static/media/weather-app.b224706fb6b6ccea1ff3.PNG",
     "static/media/html-project.PNG": "/static/media/html-project.a0eae25fe0711221a705.PNG",
     "static/media/rick-morty.PNG": "/static/media/rick-morty.566bbd55d2906707e097.PNG",
+    "static/media/ecommerce-with-redux.png": "/static/media/ecommerce-with-redux.1ad629a3f4b27963933a.png",
     "static/media/tetris.PNG": "/static/media/tetris.3b6dfc76d1961ccf50aa.PNG",
     "index.html": "/index.html",
-    "main.d5e25c8c.css.map": "/static/css/main.d5e25c8c.css.map",
-    "main.32a57925.js.map": "/static/js/main.32a57925.js.map",
+    "main.e6bc9728.css.map": "/static/css/main.e6bc9728.css.map",
+    "main.fade9970.js.map": "/static/js/main.fade9970.js.map",
     "787.ac3da9cc.chunk.js.map": "/static/js/787.ac3da9cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5e25c8c.css",
-    "static/js/main.32a57925.js"
+    "static/css/main.e6bc9728.css",
+    "static/js/main.fade9970.js"
   ]
 }
