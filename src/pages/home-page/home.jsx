@@ -15,6 +15,7 @@ import kanbanGif from '../../assets/gif/kanban.gif';
 import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
 import weatherAppGif from '../../assets/gif/weather-app.gif';
+import ecommerceGif from '../../assets/gif/ecommerce-redux.gif';
 import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -76,7 +77,7 @@ export default function Home() {
             name: "Ecommerce Redux",
             tools: "Styled-components / React / Redux / NodeJS / ExpressJS / MongoDB",
             img: eccomerceImg,
-            gif: japongoGif,
+            gif: ecommerceGif,
             description: "The main objective of this project was to learn and practice React Redux and Styled-components.",
             url: "https://tejeoner34.github.io/ecommerce-redux/"
         },
