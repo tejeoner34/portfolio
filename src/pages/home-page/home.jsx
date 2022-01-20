@@ -7,6 +7,7 @@ import tetrisImg from '../../assets/projects-img/tetris.PNG';
 import kanbanImg from '../../assets/projects-img/kanban.PNG';
 import japongoImg from '../../assets/projects-img/japongo.PNG';
 import weatherImg from '../../assets/projects-img/weather-app.PNG';
+import eccomerceImg from '../../assets/projects-img/ecommerce-with-redux.png'
 import rickMortyImg from '../../assets/projects-img/rick-morty.PNG';
 import landingGif from '../../assets/gif/landing-page.gif';
 import tetrisGif from '../../assets/gif/tetris.gif';
@@ -71,6 +72,14 @@ export default function Home() {
             description: "My favourite project so far. Full end to end application using MERN stack. It consists of a business website which allows to search for schools in Tokyo and has a private area with online courses",
             url: "https://tejeoner34.github.io/japongo/"
         },
+        {
+            name: "Ecommerce Redux",
+            tools: "Styled-components / React / Redux / NodeJS / ExpressJS / MongoDB",
+            img: eccomerceImg,
+            gif: japongoGif,
+            description: "The main objective of this project was to learn and practice React Redux and Styled-components.",
+            url: "https://tejeoner34.github.io/ecommerce-redux/"
+        },
     ]
 
     const [nameClass, setNameClass] = useState('name');
@@ -78,18 +87,13 @@ export default function Home() {
     const [onScrollClassProjects, setOnScrollClassProjects] = useState('')
     const aboutRef = useRef()
     const projectsRef = useRef()
-    
 
-    
+    useEffect(() => {
 
-   
-
-    useEffect(()=>{
-
-        const onChange = (entries) =>{
-            entries.forEach(el=>{
-                if(el.isIntersecting && el.target.className.includes('about-me'))setOnScrollClass('home-page__onOpacity')
-                if(el.isIntersecting && el.target.className.includes('projects'))setOnScrollClassProjects('home-page__onOpacity-projects')
+        const onChange = (entries) => {
+            entries.forEach(el => {
+                if (el.isIntersecting && el.target.className.includes('about-me')) setOnScrollClass('home-page__onOpacity')
+                if (el.isIntersecting && el.target.className.includes('projects')) setOnScrollClassProjects('home-page__onOpacity-projects')
             })
             // const about = entries[0];
             // const project = entries[1];
@@ -97,20 +101,20 @@ export default function Home() {
             // if(about.isIntersecting) setOnScrollClass('home-page__onOpacity');
             // if(project.isIntersecting) setOnScrollClass('home-page__onOpacity');
 
-            
+
 
         }
-    
+
         const observer = new IntersectionObserver(onChange, {
-            rootMargin:'0px'
-        })
-    
-        const toObserve = [projectsRef.current, aboutRef.current]
-        toObserve.forEach(element =>{
-            if(element)observer.observe(element)
+            rootMargin: '0px'
         })
 
-    
+        const toObserve = [projectsRef.current, aboutRef.current]
+        toObserve.forEach(element => {
+            if (element) observer.observe(element)
+        })
+
+
         // observer.observe(aboutRef.current)
         // observer.observe(projectsRef.current)
     })
@@ -142,8 +146,6 @@ export default function Home() {
         scroller.unmount()
     }
 
-
-
     const imgContainerStyle = {
         backgroundImage: `url("${image}")`,
         backgroundPosition: 'top',
@@ -156,15 +158,17 @@ export default function Home() {
         borderRadius: '2px'
     }
 
-
+    const aboutMeList = {
+        listStyle: "none"
+    }
     return (
         <div className="home">
             <aside className='email-aside'>
-            <div className='email-aside__stripe'></div>
+                <div className='email-aside__stripe'></div>
                 <div className='contact-aside__email'>
-                    <a href = "mailto: atzarco37@gmail.com">Send Email</a>
+                    <a href="mailto: atzarco37@gmail.com">Send Email</a>
                 </div>
-                
+
             </aside>
             <aside className='contact-aside'>
                 <div className='contact-aside__icons'>
@@ -205,6 +209,28 @@ export default function Home() {
                             To accomplish this I have both been studying on my own as well as enrolling into a <span className='home-page__info__p-outstanding'>Full Stack programming Bootcamp</span>.
                             Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>, working in projects both with front and back-end.
                         </p>
+                        <div>
+                            <p>
+                                Some of the technologies I have been working with are:
+                            </p>
+                            <div className='about-me__tecnologies__container'>
+                            <ul style={aboutMeList}>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Styled-components</li>
+                                <li>Material UI</li>
+                                <li>JS</li>
+                                <li>React.JS</li>
+                            </ul>
+                            <ul style={aboutMeList}>
+                            <li>Redux</li>
+                                <li>Express.JS</li>
+                                <li>NodeJS</li>
+                                <li>MongoDB</li>
+                                <li>Git Flow</li>
+                            </ul>
+                            </div>
+                        </div>
                         <p>
                             Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Redux</span>.
                         </p>
@@ -219,11 +245,11 @@ export default function Home() {
 
             </section>
             <section ref={projectsRef} className={`home-page__section home-page__projects ${onScrollClassProjects}`}>
-                <div className='projects__info'> 
+                <div className='projects__info'>
                     <h2 className='home__heading'>Projects</h2>
                     <p className='projects__p'>Here you can see a list of projects I have been working on.
-                     They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>.
-                      Going from pure HTML and CSS (first project) to a <span className='home-page__info__p-outstanding'>full end to end WebSite (last project, "Japongo Project")</span></p>
+                        They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>.
+                        Going from pure HTML and CSS (first project) to a <span className='home-page__info__p-outstanding'>full end to end WebSite (last project, "Japongo Project")</span></p>
                     <p className='projects__p'>*The projects that have a back-end have been deployed using Heroku, so please take into consideration that the first time you enter in the site, it may take a few seconds for the server to respond.</p>
                 </div>
                 <div className='projects__container'>

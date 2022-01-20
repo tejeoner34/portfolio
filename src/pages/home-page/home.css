@@ -364,6 +364,13 @@
     font-size: 1.1rem;
 }
 
+.about-me__tecnologies__container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    opacity: .7;
+}
+
 .projects__container{
     width: 100%;
     display: flex;
