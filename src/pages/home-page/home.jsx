@@ -9,6 +9,7 @@ import japongoImg from '../../assets/projects-img/japongo.PNG';
 import weatherImg from '../../assets/projects-img/weather-app.PNG';
 import eccomerceImg from '../../assets/projects-img/ecommerce-with-redux.png'
 import rickMortyImg from '../../assets/projects-img/rick-morty.PNG';
+import sushiranImg from '../../assets/projects-img/sushiran.png';
 import landingGif from '../../assets/gif/landing-page.gif';
 import tetrisGif from '../../assets/gif/tetris.gif';
 import kanbanGif from '../../assets/gif/kanban.gif';
@@ -16,6 +17,7 @@ import rickMortyGif from '../../assets/gif/rick-morty.gif';
 import japongoGif from '../../assets/gif/japongo.gif';
 import weatherAppGif from '../../assets/gif/weather-app.gif';
 import ecommerceGif from '../../assets/gif/ecommerce-redux.gif';
+import sushiranGif from '../../assets/gif/sushiran.gif';
 import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -81,6 +83,15 @@ export default function Home() {
             description: "The main objective of this project was to learn and practice React Redux and Styled-components.",
             url: "https://tejeoner34.github.io/ecommerce-redux/"
         },
+        {
+            name: "Restaurant Reservations",
+            tools: "Sass / Bootstrap / TS / React / NodeJS / ExpressJS / MongoDB",
+            img: sushiranImg,
+            gif: sushiranGif,
+            description: "The main objective of this project was to learn and practice React with TS, Bootstrap and Sass. You will be able to choose an specific date and time and you will get a confirmation email.",
+            url: "https://tejeoner34.github.io/front-sushiran/"
+        }
+
     ]
 
     const [nameClass, setNameClass] = useState('name');
@@ -215,28 +226,33 @@ export default function Home() {
                                 Some of the technologies I have been working with are:
                             </p>
                             <div className='about-me__tecnologies__container'>
-                            <ul style={aboutMeList}>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Styled-components</li>
-                                <li>Material UI</li>
-                                <li>JS</li>
-                                <li>React.JS</li>
-                            </ul>
-                            <ul style={aboutMeList}>
-                            <li>Redux</li>
-                                <li>Express.JS</li>
-                                <li>NodeJS</li>
-                                <li>MongoDB</li>
-                                <li>Git Flow</li>
-                            </ul>
+                                <ul style={aboutMeList}>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Styled-components</li>
+                                    <li>Material UI</li>
+                                    <li>Sass</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <ul style={aboutMeList}>
+                                    <li>JS</li>
+                                    <li>React.JS</li>
+                                    <li>Redux</li>
+                                    <li>Express.JS</li>
+                                    <li>NodeJS</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <ul style={aboutMeList}>
+                                    <li>Git Flow</li>
+                                    <li>TypeScript</li>
+                                </ul>
                             </div>
                         </div>
                         <p>
-                            Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Redux</span>.
+                            Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Python</span>.
                         </p>
                         <p>
-                            For further information feel free to visit my <a className='inline-links' href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US">LinkedIn</a> profile.
+                            For further information feel free to visit my <a className='inline-links' target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US">LinkedIn</a> profile.
                         </p>
                     </div>
                     <div className='about-me__img-container'>
