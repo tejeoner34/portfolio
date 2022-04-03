@@ -2,97 +2,13 @@ import image from '../../assets/img/foto-cv.jpg';
 import './home.css';
 import { scroller } from 'react-scroll';
 import ProjectCard from '../../components/project-card/project-card';
-import htmlImg from '../../assets/projects-img/html-project.PNG';
-import tetrisImg from '../../assets/projects-img/tetris.PNG';
-import kanbanImg from '../../assets/projects-img/kanban.PNG';
-import japongoImg from '../../assets/projects-img/japongo.PNG';
-import weatherImg from '../../assets/projects-img/weather-app.PNG';
-import eccomerceImg from '../../assets/projects-img/ecommerce-with-redux.png'
-import rickMortyImg from '../../assets/projects-img/rick-morty.PNG';
-import sushiranImg from '../../assets/projects-img/sushiran.png';
-import landingGif from '../../assets/gif/landing-page.gif';
-import tetrisGif from '../../assets/gif/tetris.gif';
-import kanbanGif from '../../assets/gif/kanban.gif';
-import rickMortyGif from '../../assets/gif/rick-morty.gif';
-import japongoGif from '../../assets/gif/japongo.gif';
-import weatherAppGif from '../../assets/gif/weather-app.gif';
-import ecommerceGif from '../../assets/gif/ecommerce-redux.gif';
-import sushiranGif from '../../assets/gif/sushiran.gif';
 import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { projects } from '../../projects/projects';
 
 
 export default function Home() {
-
-    const projects = [
-        {
-            name: "Pure HTML and CSS",
-            tools: "HTML / CSS",
-            img: htmlImg,
-            gif: landingGif,
-            description: "First project using just HTML and CSS to create a landing page, form and some CSS to create a chess board",
-            url: "https://tejeoner34.github.io/practica-1/"
-        },
-        {
-            name: "Tetris JS",
-            tools: "HTML / CSS / JS",
-            img: tetrisImg,
-            gif: tetrisGif,
-            description: "In this project I used Vanilla JS to create a tetris game with an old-style look",
-            url: "https://tejeoner34.github.io/classic-tetris-with-JS/"
-        },
-        {
-            name: "Rick & Morty Browser",
-            tools: "HTML / CSS / React / JS",
-            img: rickMortyImg,
-            gif: rickMortyGif,
-            description: "First project using React. This is a characters browser done by fetching from external API",
-            url: "https://tejeoner34.github.io/rick-morty-browser-reactjs/"
-        },
-        {
-            name: "Kanban",
-            tools: "HTML / CSS / JS / React",
-            img: kanbanImg,
-            gif: kanbanGif,
-            description: "Kanban board done in React. There is aldo a drag and drop funcitonality added. this is only front-end so all the inputs added are saved in local storage",
-            url: "https://tejeoner34.github.io/practica-3-new/"
-        },
-        {
-            name: "Weather App",
-            tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS",
-            img: weatherImg,
-            gif: weatherAppGif,
-            description: "This weather app was done in combination with UI/UX designers. The main theme was retro gaming.",
-            url: "https://tejeoner34.github.io/weather-page/"
-
-        },
-        {
-            name: "Japongo Project",
-            tools: "HTML / CSS / MUI / React / JS / NodeJS / ExpressJS / MongoDB",
-            img: japongoImg,
-            gif: japongoGif,
-            description: "My favourite project so far. Full end to end application using MERN stack. It consists of a business website which allows to search for schools in Tokyo and has a private area with online courses",
-            url: "https://tejeoner34.github.io/japongo/"
-        },
-        {
-            name: "Ecommerce Redux",
-            tools: "Styled-components / React / Redux / NodeJS / ExpressJS / MongoDB",
-            img: eccomerceImg,
-            gif: ecommerceGif,
-            description: "The main objective of this project was to learn and practice React Redux and Styled-components.",
-            url: "https://tejeoner34.github.io/ecommerce-redux/"
-        },
-        {
-            name: "Restaurant Reservations",
-            tools: "Sass / Bootstrap / TS / React / NodeJS / ExpressJS / MongoDB",
-            img: sushiranImg,
-            gif: sushiranGif,
-            description: "The main objective of this project was to learn and practice React with TS, Bootstrap and Sass. You will be able to choose an specific date and time and you will get a confirmation email.",
-            url: "https://tejeoner34.github.io/front-sushiran/"
-        }
-
-    ]
 
     const [nameClass, setNameClass] = useState('name');
     const [onScrollClass, setOnScrollClass] = useState('')
@@ -107,14 +23,6 @@ export default function Home() {
                 if (el.isIntersecting && el.target.className.includes('about-me')) setOnScrollClass('home-page__onOpacity')
                 if (el.isIntersecting && el.target.className.includes('projects')) setOnScrollClassProjects('home-page__onOpacity-projects')
             })
-            // const about = entries[0];
-            // const project = entries[1];
-
-            // if(about.isIntersecting) setOnScrollClass('home-page__onOpacity');
-            // if(project.isIntersecting) setOnScrollClass('home-page__onOpacity');
-
-
-
         }
 
         const observer = new IntersectionObserver(onChange, {
@@ -245,6 +153,7 @@ export default function Home() {
                                 <ul style={aboutMeList}>
                                     <li>Git Flow</li>
                                     <li>TypeScript</li>
+                                    <li>Angular</li>
                                 </ul>
                             </div>
                         </div>
