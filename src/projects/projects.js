@@ -8,6 +8,7 @@ import eccomerceImg from '../assets/projects-img/ecommerce-with-redux.png'
 import rickMortyImg from '../assets/projects-img/rick-morty.PNG';
 import sushiranImg from '../assets/projects-img/sushiran.png';
 import harryPotterImg from '../assets/projects-img/harrypotter.png';
+import pokemonImg from '../assets/projects-img/pokemon-arena.png';
 import landingGif from '../assets/gif/landing-page.gif';
 import tetrisGif from '../assets/gif/tetris.gif';
 import kanbanGif from '../assets/gif/kanban.gif';
@@ -17,6 +18,7 @@ import weatherAppGif from '../assets/gif/weather-app.gif';
 import ecommerceGif from '../assets/gif/ecommerce-redux.gif';
 import sushiranGif from '../assets/gif/sushiran.gif';
 import harryPotterGif from '../assets/gif/harrypotter.gif'
+import pokemonGif from '../assets/gif/pokemon-arena.gif'
 
 export const projects = [
     {
@@ -99,7 +101,18 @@ export const projects = [
         gif: harryPotterGif,
         description: "Project focused on learning Angular by creating a characters browser with HTTP requests, infinite scroll...etc",
         url: "https://tejeoner34.github.io/angular-first-project/",
-        framework: "react"
+        framework: "angular",
+        isLastProject: false
+    },
+    {
+        name: "Pocket Monster Arena",
+        tools: "TS / Angular / MongoDB / ExpressJS",
+        img: pokemonImg,
+        gif: pokemonGif,
+        description: "Creation of Pokemon arena game with both player vs computer and online mode",
+        url: "https://startling-cupcake-ce0148.netlify.app/home",
+        framework: "angular",
+        isLastProject: true
     }
 
 ]       

@@ -1,11 +1,12 @@
 import image from '../../assets/img/foto-cv.jpg';
 import './home.css';
 import { scroller } from 'react-scroll';
-import ProjectCard from '../../components/project-card/project-card';
 import { useState, useRef, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { projects } from '../../projects/projects';
+import { TabsComponent } from '../../components/tabs-component/Tabs';
+
 
 
 export default function Home() {
@@ -122,12 +123,15 @@ export default function Home() {
                     <div className='about-me__info'>
 
                         <p>
-                            Hello! My name is Alvaro, I started my career studying and working in the <span className='home-page__info__p-outstanding'>business and marketing</span> world.
-                            After some years of experience in both big companies (EA, KIA...) and Start Ups, I decided to jump into the programming world.
+                            Hello! My name is Alvaro, I started my career studying and working in the <span className='home-page__info__p-outstanding'>business and digital marketing</span> world.
+                            After some years of experience in both, big companies (EA, KIA...) and Start Ups, I decided to jump into the programming world.
                         </p>
-                        <p>
+                        {/* <p>
                             To accomplish this I have both been studying on my own as well as enrolling into a <span className='home-page__info__p-outstanding'>Full Stack programming Bootcamp</span>.
                             Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>, working in projects both with front and back-end.
+                        </p> */}
+                        <p>
+                            Currently I am working as a Front End developer, using JS frameworks like <span className='home-page__info__p-outstanding'>Angular or React</span>.
                         </p>
                         <div>
                             <p>
@@ -154,33 +158,34 @@ export default function Home() {
                                     <li>Git Flow</li>
                                     <li>TypeScript</li>
                                     <li>Angular</li>
+                                    <li>Ionic</li>
+                                    <li>PWA</li>
                                 </ul>
                             </div>
-                        </div>
-                        <p>
-                            Some other technologies I am currently studying are <span className='home-page__info__p-outstanding'>TypeScript and Python</span>.
-                        </p>
+                        </div> 
                         <p>
                             For further information feel free to visit my <a className='inline-links' target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/%C3%A1lvaro-tejedor-zarco/?locale=en_US">LinkedIn</a> profile.
                         </p>
                     </div>
-                    <div className='about-me__img-container'>
+                    {/* <div className='about-me__img-container'>
                         <img src="https://static.platzi.com/media/blog/mern-stack-284eedb6-ee6b-4441-b181-5064a453a15a.png" alt="" />
-                    </div>
+                    </div> */}
                 </div>
 
             </section>
             <section ref={projectsRef} className={`home-page__section home-page__projects ${onScrollClassProjects}`}>
                 <div className='projects__info'>
                     <h2 className='home__heading'>Projects</h2>
-                    <p className='projects__p'>Here you can see a list of projects I have been working on.
-                        They are listed following <span className='home-page__info__p-outstanding'>my learning path</span>.
-                        Going from pure HTML and CSS (first project) to a <span className='home-page__info__p-outstanding'>full end to end WebSite (last project, "Japongo Project")</span></p>
+                    <p className='projects__p'>Here you can see a list of projects I have been working on filtered by framework.
+                    <span className='home-page__info__p-outstanding'> You can find a tab at the end that contains my most recent project</span>.
+                    </p>
                     <p className='projects__p'>*The projects that have a back-end have been deployed using Heroku, so please take into consideration that the first time you enter in the site, it may take a few seconds for the server to respond.</p>
                 </div>
                 <div className='projects__container'>
 
-                    {projects.map((e, i) => <ProjectCard data={e} key={i}></ProjectCard>)}
+                    <TabsComponent projects={projects} />
+
+                    {/* {projects.map((e, i) => <ProjectCard data={e} key={i}></ProjectCard>)} */}
 
                 </div>
 
