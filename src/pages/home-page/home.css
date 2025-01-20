@@ -131,6 +131,7 @@
   animation: textOpacity 0.5s linear 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+  text-align: center;
 }
 
 @keyframes textOpacity {

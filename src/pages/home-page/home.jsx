@@ -81,11 +81,11 @@ export default function Home() {
             <p className="info-container__hello">Welcome, my name is</p>
             <div className="nameWrapper">
               <h2 className="name">
-                Álvaro Tejedor<div className="name__writing-line">|</div>
+                Alvaro<div className="name__writing-line">|</div>
               </h2>
               <div className="name__bottom-border"></div>
             </div>
-            <p>Junior Front-end Developer</p>
+            <p>Front-end Developer</p>
           </div>
           <button onClick={handleProjectsButton} className="home-page__projects-button">
             Go to Projects!
@@ -106,41 +106,45 @@ export default function Home() {
               Hello! My name is Alvaro, I started my career studying and working in the{' '}
               <span className="home-page__info__p-outstanding">business and digital marketing</span>{' '}
               world. After some years of experience in both, big companies (EA, KIA...) and Start
-              Ups, I decided to jump into the programming world.
+              Ups, I decided to jump into the{' '}
+              <span className="home-page__info__p-outstanding">programming world</span> . For the
+              past 3 years I have been working in{' '}
+              <span className="home-page__info__p-outstanding">
+                NTT Data as a front end developer
+              </span>{' '}
+              using different technologies.
             </p>
-            {/* <p>
-                            To accomplish this I have both been studying on my own as well as enrolling into a <span className='home-page__info__p-outstanding'>Full Stack programming Bootcamp</span>.
-                            Until this moment I have been focusing on <span className='home-page__info__p-outstanding'>MERN stack</span>, working in projects both with front and back-end.
-                        </p> */}
             <p>
-              Currently I am working as a Front End developer, using JS frameworks like{' '}
-              <span className="home-page__info__p-outstanding">Angular or React</span>.
+              I decided I wanted some new challenges so currently I am residing in Japan (Toykyo)
+              studying Japanese in a Japanese language school. While studying Japanese I am also
+              focusing on improving my programming skills such as NextJS framework or React Native.
             </p>
             <div>
-              <p>Some of the technologies I have been working with are:</p>
+              <p>Some of the skills or technologies I have been working with are:</p>
               <div className="about-me__tecnologies__container">
                 <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>React.JS</li>
+                  <li>React Native</li>
+                  <li>Lit element (Web components building a hybrid mobile app)</li>
+                  <li>Angular</li>
+                  <li>Ionic</li>
+                  <li>Express.JS</li>
+                </ul>
+                <ul>
+                  <li>Tailwind</li>
                   <li>Styled-components</li>
                   <li>Material UI</li>
                   <li>Sass</li>
-                  <li>Bootstrap</li>
-                </ul>
-                <ul>
-                  <li>JS</li>
-                  <li>React.JS</li>
-                  <li>Redux</li>
-                  <li>Express.JS</li>
-                  <li>NodeJS</li>
+                  <li>Shadcn</li>
                   <li>MongoDB</li>
+                  <li>Firebase</li>
                 </ul>
                 <ul>
                   <li>Git Flow</li>
+                  <li>Agile methodology</li>
                   <li>TypeScript</li>
-                  <li>Angular</li>
-                  <li>Ionic</li>
-                  <li>PWA</li>
+                  <li>Redux</li>
+                  <li>Hybrid Mobile Apps</li>
                 </ul>
               </div>
             </div>
@@ -169,7 +173,7 @@ export default function Home() {
             Here you can see a list of projects I have been working on filtered by framework.
             <span className="home-page__info__p-outstanding">
               {' '}
-              You can find a tab at the end that contains my most recent project
+              You can find a tab at the end that contains my most recent projects
             </span>
             .
           </p>
