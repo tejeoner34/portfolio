@@ -7,12 +7,17 @@ import ProjectCard from '../project-card/project-card';
 import { DiAngularSimple } from 'react-icons/di';
 import { FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
+import { RiNextjsLine } from 'react-icons/ri';
 import './styles.css';
 
 const techs = {
   react: {
     icon: <FaReact size={33} />,
     tech: 'react',
+  },
+  nextjs: {
+    icon: <RiNextjsLine size={33} />,
+    tech: 'nextjs',
   },
   angular: {
     icon: <DiAngularSimple size={33} />,

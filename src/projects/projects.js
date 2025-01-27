@@ -160,7 +160,7 @@ export const projects = {
       name: 'Japanary',
       tools: 'React / TS / Shadcn / Firebase / ExpressJS / OpenAi / Cloudinary',
       img: japanaryImg,
-      gif: pokemonGif,
+      gif: japanaryImg,
       description: 'Dictionary and flashcard website for Japanese language learning',
       url: 'https://japanary.netlify.app/dictionary/',
       framework: 'react',

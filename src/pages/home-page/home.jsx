@@ -81,7 +81,7 @@ export default function Home() {
             <p className="info-container__hello">Welcome, my name is</p>
             <div className="nameWrapper">
               <h2 className="name">
-                Alvaro<div className="name__writing-line">|</div>
+                Alvaro Tejedor<div className="name__writing-line">|</div>
               </h2>
               <div className="name__bottom-border"></div>
             </div>
