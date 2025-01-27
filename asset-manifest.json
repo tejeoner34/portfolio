@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7bb4e6c4.css",
-    "main.js": "/portfolio/static/js/main.7b2091f1.js",
+    "main.css": "/portfolio/static/css/main.705f6359.css",
+    "main.js": "/portfolio/static/js/main.546c69be.js",
     "static/js/787.ac3da9cc.chunk.js": "/portfolio/static/js/787.ac3da9cc.chunk.js",
     "static/media/sushiran.gif": "/portfolio/static/media/sushiran.de2acd60c659d6e300d4.gif",
     "static/media/harrypotter.gif": "/portfolio/static/media/harrypotter.753e7711f099caaec910.gif",
@@ -20,17 +20,18 @@
     "static/media/html-project.PNG": "/portfolio/static/media/html-project.a0eae25fe0711221a705.PNG",
     "static/media/harrypotter.png": "/portfolio/static/media/harrypotter.6bc377e60d83ff7cc8c2.png",
     "static/media/rick-morty.PNG": "/portfolio/static/media/rick-morty.566bbd55d2906707e097.PNG",
+    "static/media/japanary.JPG": "/portfolio/static/media/japanary.835f157566d5b94baa52.JPG",
     "static/media/ecommerce-with-redux.png": "/portfolio/static/media/ecommerce-with-redux.f244b36dbe42e69d1aca.png",
     "static/media/pokemon-arena.png": "/portfolio/static/media/pokemon-arena.6ef0df71fc8f5be96894.png",
     "static/media/sushiran.png": "/portfolio/static/media/sushiran.9fb44863ef54c679b73d.png",
     "static/media/tetris.PNG": "/portfolio/static/media/tetris.3b6dfc76d1961ccf50aa.PNG",
     "index.html": "/portfolio/index.html",
-    "main.7bb4e6c4.css.map": "/portfolio/static/css/main.7bb4e6c4.css.map",
-    "main.7b2091f1.js.map": "/portfolio/static/js/main.7b2091f1.js.map",
+    "main.705f6359.css.map": "/portfolio/static/css/main.705f6359.css.map",
+    "main.546c69be.js.map": "/portfolio/static/js/main.546c69be.js.map",
     "787.ac3da9cc.chunk.js.map": "/portfolio/static/js/787.ac3da9cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bb4e6c4.css",
-    "static/js/main.7b2091f1.js"
+    "static/css/main.705f6359.css",
+    "static/js/main.546c69be.js"
   ]
 }
