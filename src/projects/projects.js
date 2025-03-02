@@ -19,6 +19,12 @@ import sushiranGif from '../assets/gif/sushiran.gif';
 import harryPotterGif from '../assets/gif/harrypotter.gif';
 import pokemonGif from '../assets/gif/pokemon-arena.gif';
 import japanaryImg from '../assets/projects-img/japanary.JPG';
+const japanaryGif =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1740898914/japanary_gmjs74.gif';
+const pocketMonsterArenaNextImg =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1740897590/pocket-monster-arena-next_t4yzku.png';
+const pocketMonsterArenaNextGif =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1740897589/pocket-monster-arena-next_ijmt3a.gif';
 
 export const projects = {
   react: [
@@ -26,7 +32,7 @@ export const projects = {
       name: 'Japanary',
       tools: 'React / TS / Shadcn / Firebase / ExpressJS / OpenAi',
       img: japanaryImg,
-      gif: pokemonGif,
+      gif: japanaryGif,
       description: 'Dictionary and flashcard website for Japanese language learning',
       url: 'https://japanary.netlify.app/dictionary/',
       framework: 'react',
@@ -115,11 +121,11 @@ export const projects = {
   ],
   nextjs: [
     {
-      name: 'Mercari replica',
-      tools: 'NextJS / Shadcn ',
-      img: pokemonImg,
-      gif: pokemonGif,
-      description: 'Mercari replica using NextJS for learning purposes',
+      name: 'Pocket Monster Arena',
+      tools: 'NextJS / Tailwind / SocketIO / ExpressJS',
+      img: pocketMonsterArenaNextImg,
+      gif: pocketMonsterArenaNextGif,
+      description: 'Creation of Pokemon arena game with both player vs computer and online mode',
       url: 'https://japanary.netlify.app/dictionary/',
       framework: 'nextjs',
     },
@@ -148,22 +154,22 @@ export const projects = {
   ],
   recent: [
     {
-      name: 'Mercari replica',
-      tools: 'NextJS / Shadcn ',
-      img: pokemonImg,
-      gif: pokemonGif,
-      description: 'Mercari replica using NextJS for learning purposes',
-      url: 'https://japanary.netlify.app/dictionary/',
-      framework: 'nextjs',
-    },
-    {
       name: 'Japanary',
       tools: 'React / TS / Shadcn / Firebase / ExpressJS / OpenAi / Cloudinary',
       img: japanaryImg,
-      gif: japanaryImg,
+      gif: japanaryGif,
       description: 'Dictionary and flashcard website for Japanese language learning',
       url: 'https://japanary.netlify.app/dictionary/',
       framework: 'react',
+    },
+    {
+      name: 'Pocket Monster Arena',
+      tools: 'NextJS / Tailwind / SocketIO / ExpressJS',
+      img: pocketMonsterArenaNextImg,
+      gif: pocketMonsterArenaNextGif,
+      description: 'Creation of Pokemon arena game with both player vs computer and online mode',
+      url: 'https://japanary.netlify.app/dictionary/',
+      framework: 'nextjs',
     },
   ],
 };

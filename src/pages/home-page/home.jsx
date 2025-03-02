@@ -158,6 +158,15 @@ export default function Home() {
               >
                 &nbsp;LinkedIn&nbsp;
               </a>
+              &nbsp;and&nbsp;
+              <a
+                className="inline-links"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/tejeoner34/"
+              >
+                &nbsp;Github&nbsp;
+              </a>
               profile.
             </p>
           </div>
