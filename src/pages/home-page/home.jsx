@@ -90,6 +90,15 @@ export default function Home() {
           <button onClick={handleProjectsButton} className="home-page__projects-button">
             Go to Projects!
           </button>
+          <button className="home-page__projects-button">
+            <a
+              href="https://portfolio-blog-git-main-tejeoner34s-projects.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Go to Projects Blog!
+            </a>
+          </button>
           <button onClick={handleAboutButton} className="home-page__projects-button">
             About Me
           </button>

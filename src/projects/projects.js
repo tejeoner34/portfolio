@@ -26,6 +26,17 @@ const pocketMonsterArenaNextImg =
 const pocketMonsterArenaNextGif =
   'https://res.cloudinary.com/dejzrr9lt/image/upload/v1740897589/pocket-monster-arena-next_ijmt3a.gif';
 
+const expenseTrackerGif =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1745456198/expense-tracker-opt_z9wrjh.gif';
+const expenseTrackerImg =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1745452602/portfolio/expense-tracker_n0zs4o.png';
+
+const portfolioImg =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1745246139/portfolio/portfolio-blog_hupakj.png';
+
+const portfolioGif =
+  'https://res.cloudinary.com/dejzrr9lt/image/upload/v1745460212/porfolio-blog_bzm6jt.gif';
+
 export const projects = {
   react: [
     {
@@ -127,6 +138,26 @@ export const projects = {
       gif: pocketMonsterArenaNextGif,
       description: 'Creation of Pokemon arena game with both player vs computer and online mode',
       url: 'https://pocket-monster-arena.vercel.app/en',
+      framework: 'nextjs',
+    },
+    {
+      name: 'Expense tracker',
+      tools:
+        'NextJS / Tailwind / PostgreSQL with Prisma ORM / NextAuth / Recharts / React Query / Jest',
+      img: expenseTrackerImg,
+      gif: expenseTrackerGif,
+      description:
+        'A modern, full-stack expense tracking application built with Next.js, featuring real-time expense management, currency conversion, and comprehensive data visualization.',
+      url: 'https://expense-tracker-9cb8.vercel.app/',
+      framework: 'nextjs',
+    },
+    {
+      name: 'Portfolio Blog',
+      tools: 'NextJS / Tailwind / SSG / Headless Wordpress',
+      img: portfolioImg,
+      gif: portfolioGif,
+      description: 'Creation of a portfolio blog using NextJS and Headless Wordpress',
+      url: 'https://portfolio-blog-coral.vercel.app/blog',
       framework: 'nextjs',
     },
   ],
